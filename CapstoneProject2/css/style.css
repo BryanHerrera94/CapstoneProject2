@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.about-us {
+    margin: 50px 0;
+    padding: 30px 0;
+}
+
+.about-us p {
+    text-align: justify;
+}
+
+.about-us img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    flex-shrink: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.mountain-img {
+    width: 100%;
+    height: auto;
+}
+
+.custom-dropdown select {
+    width: 165px; 
+}
