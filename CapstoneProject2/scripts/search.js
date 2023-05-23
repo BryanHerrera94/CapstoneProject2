@@ -21,6 +21,10 @@ document.addEventListener("DOMContentLoaded", function() {
         searchParks(searchOption, searchInput);
     });
 
+    document.getElementById("resetButton").addEventListener("click", function() {
+        location.reload(); // Reload the page to reset it
+    });
+
    
     
 });
@@ -122,3 +126,4 @@ function displayPark(park) {
     container.appendChild(card);
     resultsDiv.appendChild(container);
 }
+

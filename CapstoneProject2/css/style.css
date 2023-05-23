@@ -62,3 +62,11 @@ main {
 .custom-dropdown select {
     width: 165px; 
 }
+
+.button {
+    width: 100px; /* Adjust the width */
+}
+
+.btn-group {
+    gap: 10px; /* Adjust the gap value */
+}
