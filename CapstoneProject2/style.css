@@ -206,4 +206,17 @@ main {
     animation-delay: 1.2s;
   }
   
-  
+  @keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#mountainInfo .col-md-6 {
+    animation: slideInLeft 1s ease-in-out;
+}
