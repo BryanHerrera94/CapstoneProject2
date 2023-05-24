@@ -51,7 +51,7 @@ async function displayMountain(mountain) {
     infoDiv.appendChild(sunset);
 
     let imgDiv = document.createElement("div");
-    imgDiv.classList.add("col-md-6", "image-container");
+    imgDiv.classList.add("col-md-6");
 
     let img = document.createElement("img");
     img.src = `images/${mountain.img}`;
@@ -59,6 +59,14 @@ async function displayMountain(mountain) {
     img.classList.add("img-fluid", "mountain-img");
     img.dataset.url = mountain.url;
     imgDiv.appendChild(img);
+
+    img.addEventListener("click", function() {
+        // Get the URL from the data attribute
+        let newPageUrl = this.dataset.url;
+
+        // Navigate to the new page
+        window.open(newPageUrl, "_blank")
+    });
 
     mountainInfo.appendChild(infoDiv);
     mountainInfo.appendChild(imgDiv);
