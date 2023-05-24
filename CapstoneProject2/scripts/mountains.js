@@ -51,12 +51,13 @@ async function displayMountain(mountain) {
     infoDiv.appendChild(sunset);
 
     let imgDiv = document.createElement("div");
-    imgDiv.classList.add("col-md-6");
+    imgDiv.classList.add("col-md-6", "image-container");
 
     let img = document.createElement("img");
     img.src = `images/${mountain.img}`;
     img.alt = mountain.name;
     img.classList.add("img-fluid", "mountain-img");
+    img.dataset.url = mountain.url;
     imgDiv.appendChild(img);
 
     mountainInfo.appendChild(infoDiv);
