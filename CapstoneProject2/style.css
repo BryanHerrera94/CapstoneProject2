@@ -16,6 +16,7 @@ body {
     flex-shrink: 0;
     padding: 20px 0;
     text-align: center;
+    
 }
 
 main {
@@ -153,7 +154,7 @@ main {
     color: rgb(255, 255, 255);
     padding: 12px 16px;
     text-decoration: none;
-    width: 100%; /* Set a consistent width */
+    width: 100%; 
    
 }
 .dropdown-content {
@@ -235,14 +236,14 @@ main {
   .mountain-img {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 90px;
+    border-radius: 50px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
   }
 /* hover effect might remove later*/
   .mountain-img:hover {
     transform: scale(1.1);
-    border-radius: 60px;
+    border-radius: 45px;
   }
 
   #mountainInfo p {
@@ -259,18 +260,21 @@ main {
 
   #mountainHeading {
     font-family: 'Alegreya Sans SC';font-size: 65px;
-    color: rgb(3, 13, 143);
+    color: rgb(0, 0, 0);
     /* CSS rules for the specific h1 element with id "mountainHeading" */
   }
 
   #mountainSelect {
     font-family: 'Alegreya Sans SC';font-size: 20px;
-    color: rgb(3, 143, 22);
-    /* CSS rules for the specific select element with id "mountainSelect" */
+    color: rgb(0, 0, 0);
+    width: 30%;
+   
   }
 
   label[for="mountainSelect"] {
-    color: rgb(180, 0, 0); /* Change the font color to your desired color */
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-weight: bold;
   }
 
 
@@ -347,3 +351,5 @@ main {
     background-size: cover;
     /* Additional background styles if needed */
 }
+
+

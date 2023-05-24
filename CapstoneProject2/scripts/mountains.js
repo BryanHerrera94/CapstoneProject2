@@ -53,6 +53,11 @@ async function displayMountain(mountain) {
     let imgDiv = document.createElement("div");
     imgDiv.classList.add("col-md-6");
 
+    let infoText = document.createElement("p");
+    infoText.textContent = "Click image for trail information";
+    infoText.classList.add("info-text");
+    imgDiv.appendChild(infoText);
+
     let img = document.createElement("img");
     img.src = `images/${mountain.img}`;
     img.alt = mountain.name;
