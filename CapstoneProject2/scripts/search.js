@@ -50,10 +50,13 @@ function fillDropdown(dataArray) {
 function searchParks(searchOption, searchInput) {
     let resultsDiv = document.getElementById("results");
     resultsDiv.innerHTML = "";
+
     if (searchOption === "location") {
         nationalParksArray.filter(park => park.State === searchInput).forEach(park => displayPark(park));
     } else if (searchOption === "parkType") {
         nationalParksArray.filter(park => park.LocationName.toLowerCase().includes(searchInput.toLowerCase())).forEach(park => displayPark(park));
+    } else if (searchOption === "showAll") {
+        nationalParksArray.forEach(park => displayPark(park));
     }
 }
 
