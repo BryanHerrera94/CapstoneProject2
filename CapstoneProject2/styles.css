@@ -69,27 +69,11 @@ span {
     font-family: 'Alegreya Sans SC';
 }
 
-button {
-    background: #f9004d;
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 1vw 3vw;
-    border-radius: 30px !important;
-    transition: .4s;
-}
-
-button:hover {
-    background: transparent;
-    border: 2px solid #f9004d;
-    cursor: pointer;
-}
 
 .logo-image {
     width: 70px;
   }
-  
+
   #contactButton {
     background: #f9004d;
     color: white;
@@ -106,8 +90,37 @@ button:hover {
     border: 2px solid #f9004d;
     cursor: pointer;
   }
-
+  
   #contactButton:hover,
   .button:focus-visible {
     transform: translateY(-0.75rem);
+  }
+
+
+  .image-container {
+    position: relative;
+}
+
+.background-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-container {
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+  
+  .logo-image.animated {
+    animation: spin 15.0s linear infinite;
   }

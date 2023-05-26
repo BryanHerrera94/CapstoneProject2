@@ -267,7 +267,7 @@ main {
   #mountainHeading {
     font-family: 'Alegreya Sans SC';font-size: 65px;
     color: rgb(0, 0, 0);
-    /* CSS rules for the specific h1 element with id "mountainHeading" */
+    
   }
 
   #mountainSelect {
@@ -289,20 +289,31 @@ main {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: 'Alegreya Sans SC';font-size: 17px;
-  
+  font-family: 'Alegreya Sans SC';font-size: 19px;
+  color: #000000;
+  font-weight: bolder;
+  transition: transform 0.3s;
+}
+
+
+.card:hover {
+  transform: scale(1.05); /* Increase the scale of the card on hover */
 }
 
 .card-title {
   font-size: 18px;
   font-weight: bold;
-  font-family: 'Alegreya Sans SC';font-size: 25px;
+  font-family: 'Alegreya Sans SC';font-size: 30px;
+  color: #000000;
   
 }
 
+
 .card-body {
   padding: 10px;
-  
+  background-image: url(images/Tree.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card-text {
@@ -312,7 +323,8 @@ main {
 
 .card-text strong {
   font-weight: bold;
-  color: rgb(255, 7, 7);
+  color: rgb(252, 235, 2);
+  font-size: 23px;
 }
 
 #searchDropdown {
@@ -455,4 +467,17 @@ main {
   100% {
     opacity: 1;
   }
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.logo-image.animated {
+  animation: spin 17.0s linear infinite;
 }
