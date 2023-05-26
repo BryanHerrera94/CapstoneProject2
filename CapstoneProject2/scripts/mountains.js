@@ -41,7 +41,7 @@ async function displayMountain(mountain) {
 
     let elevation = document.createElement("p");
     elevation.innerHTML = `<strong>Elevation:</strong> ${mountain.elevation}`;
-    infoDiv.appendChild(elevation);
+    infoDiv.appendChild(elevation); 
 
     let effort = document.createElement("p");
     effort.innerHTML = `<strong>Effort:</strong> ${mountain.effort}`;
@@ -79,7 +79,7 @@ async function displayMountain(mountain) {
         // Get the URL from the data attribute
         let newPageUrl = this.dataset.url;
 
-        // Navigate to the new page
+        
         window.open(newPageUrl, "_blank")
     });
 
