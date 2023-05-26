@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+
+    // Add an event listener to the search form for the "submit" event
     document.getElementById("searchForm").addEventListener("submit", function(event) {
         event.preventDefault();
         let searchOption = document.querySelector('input[name="searchOption"]:checked').value;

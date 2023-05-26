@@ -8,6 +8,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+const resetButton = document.getElementById("resetButton");
+
+
+resetButton.addEventListener("click", function() {
+    document.getElementById("selectMountainForm").reset();
+    document.getElementById("mountainInfo").innerHTML = "";
+});
+
+
 function fillDropdown(mountains) {
     let dropdown = document.getElementById("mountainSelect");
     mountains.forEach(mountain => {
@@ -21,6 +30,7 @@ function fillDropdown(mountains) {
 async function displayMountain(mountain) {
     let mountainInfo = document.getElementById("mountainInfo");
     mountainInfo.innerHTML = "";
+    
 
     let infoDiv = document.createElement("div");
     infoDiv.classList.add("col-md-6");

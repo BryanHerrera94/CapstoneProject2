@@ -48,7 +48,8 @@
                     engaging information on the country's remarkable national parks and majestic mountains. Born out of a deep love and respect for the great outdoors, we're on a mission to inspire, educate, and equip you with everything you need
                     to embrace the beauty and adventure that America's natural landscapes have to offer. Whether you're planning a tranquil retreat in the serene wilderness, or a thrilling hike up towering peaks, Wanderlust Wonderland is your reliable
                     companion to explore and appreciate the awe-inspiring magnificence of the US outdoors. Join us as we celebrate the spirit of adventure and help you make unforgettable memories, one trail at a time, Yee!</p>
-                    <button type="button">Contact Us</button>
+                    <button type="button" id="contactButton" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+           
             </div>
         </div>
     </section>
@@ -67,7 +68,27 @@
         <p>Copyright © 2023 Wanderlust Wonderland. All rights reserved.</p>
     </footer>
 </div>
-
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>For any inquiries or feedback, please reach out to us:</p>
+                <ul>
+                    <li>Email: info@wanderlustwonderland.com</li>
+                    <li>Phone: 123-456-7890</li>
+                    <li>Address: 123 Main St, San Francisco, CA</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>

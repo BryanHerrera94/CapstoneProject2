@@ -90,3 +90,24 @@ button:hover {
     width: 70px;
   }
   
+  #contactButton {
+    background: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 1vw 3vw;
+    border-radius: 30px !important;
+    transition: transform 1000ms;
+  }
+  
+  #contactButton:hover {
+    background: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+  }
+
+  #contactButton:hover,
+  .button:focus-visible {
+    transform: translateY(-0.75rem);
+  }
